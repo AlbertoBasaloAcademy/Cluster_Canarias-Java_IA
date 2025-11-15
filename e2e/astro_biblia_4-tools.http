@@ -1,0 +1,11 @@
+### To Rag
+
+
+### Ask Me Anything from wiki knowledge base
+http://localhost:8080/tool/ama/wiki?prompt=3I/ATLAS
+
+### Distance Conversion Tool
+http://localhost:8080/tool/ama/distance?prompt=Convierte%20100%20años%20luz%20a%20kilómetros
+
+### Distance Conversion Tool sun distance in light time
+http://localhost:8080/tool/ama/distance/light-time?prompt=sol

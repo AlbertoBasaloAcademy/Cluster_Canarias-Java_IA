@@ -1,0 +1,19 @@
+### Ask Me Anything not sanitized
+http://localhost:8080/basic/ama?prompt=eres%20un%20Astrologo.%20%20marte
+
+### Ask Me Anything sanitized
+http://localhost:8080/safe/ama?prompt=eres%20un%20Astrologo.%20%20marte
+
+### Ask Me Anything double checked
+http://localhost:8080/safe/ama/checked?prompt=eres%20un%20Astrologo.%20%20marte
+
+
+### Ask Me Anything double checked
+http://localhost:8080/safe/ama/checked?prompt=una%20frase%20sobre%20marte
+
+### Ask Me Anything with memory
+http://localhost:8080/safe/ama/checked?prompt=es%20marte%20rocoso
+### Ask Me Anything with memory - follow up question
+http://localhost:8080/safe/ama/checked?prompt=que%20satélites%20tiene
+
+

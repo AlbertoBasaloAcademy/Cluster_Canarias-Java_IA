@@ -1,0 +1,20 @@
+### Ask Me Anything
+http://localhost:8080/basic/ama?prompt=mercurio
+
+### Astronomy Only
+http://localhost:8080/basic/astro?prompt=mercurio
+
+### Astronomy Only - Non related question
+http://localhost:8080/basic/astro?prompt=zeus
+
+### Planet question
+http://localhost:8080/basic/planet?planet=mercurio
+
+### Planet Satellite question
+http://localhost:8080/basic/planet/satellites?planet=marte
+
+### Planet Satellite question with structured response
+http://localhost:8080/basic/planet/satellites/structured?planet=marte
+
+### Planet Satellite question with streaming response
+http://localhost:8080/basic/planet/satellites/stream?planet=marte

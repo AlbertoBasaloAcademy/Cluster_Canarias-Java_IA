@@ -1,0 +1,78 @@
+/* @theme ab */
+
+@import 'default';
+
+:root {
+  --ab-light-green: #00ff00;
+  --ab-green: #00aa00;
+  --ab-dark-green: #007700;
+  --ab-light-blue: #00ffff;
+  --ab-blue: #00aaff;
+  --ab-dark-blue: #0077ff;
+  --ab-yellow: #fafa00;
+  --ab-red: #ff0000;
+  --ab-white: #ffffff;
+  --ab-light-gray: #fefefe;
+  --ab-gray: #777777;
+  --ab-dark-gray: #222222;
+  --ab-black: #000000;
+  background-color: var(--ab-light-gray);
+  color: var(--ab-green);
+  font-family: Tomorrow, monospace;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--ab-dark-green);
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  border-bottom: #00aaff 2px solid;
+}
+
+a {
+  color: var(--ab-blue);
+}
+
+pre {
+  font-family: 'Cascadia Code', monospace;
+}
+
+blockquote {
+  color: var(--ab-dark-green);
+  border-left: 4px solid var(--ab-blue);
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 1.5em;
+}
+
+li:before {
+  position: absolute;
+  content: ">";
+  color: var(--ab-blue);
+  left: 10px;
+}
+
+
+table th {
+  border-color: var(--ab-blue);
+  border-width: 1px;
+  border-style: solid;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--ab-light-gray);
+}

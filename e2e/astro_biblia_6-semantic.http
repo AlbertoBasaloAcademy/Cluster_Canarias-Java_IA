@@ -1,0 +1,20 @@
+### Semantic Test - Astronomy Message 1
+http://localhost:8080/vector/ama?prompt=estrellas
+
+### Semantic Test - Astronomy Message 2
+http://localhost:8080/vector/ama?prompt=Nostromo
+
+### Semantic Test - Astronomy Message 3
+http://localhost:8080/vector/ama?prompt=asteroides
+
+### Semantic Test - Astronomy Message 4
+http://localhost:8080/vector/ama?prompt=gigante
+
+### Semantic Tunned Test - Astronomy Message 4
+http://localhost:8080/vector/ama?prompt=gigante&similarityThreshold=0.1
+
+### RAG Test - Astronomy Message 2
+http://localhost:8080/vector/chat?question=Nostromo
+
+### No RAG Test - Not Astronomy Message 2
+http://localhost:8080/basic/ama?prompt=Nostromo

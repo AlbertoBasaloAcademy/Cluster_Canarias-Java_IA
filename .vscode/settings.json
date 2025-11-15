@@ -1,0 +1,34 @@
+{
+  "cSpell.words": [
+    "innegociables",
+    "SDLC"
+  ],
+  "markdown.marp.themes": [
+    "/docs/lessons/ab.css"
+  ],
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.advanced": {
+    "inlineSuggest": true,
+    "inlineSuggest.enable": true,
+    "inlineSuggest.showSuggestionsAlways": true
+  },
+  "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Group changes into logical commits. Create commits with clear messages that describe the changes made to the codebase following conventional commit guidelines. Keep commits linked to features, tasks, or issues when applicable."
+    }
+  ],
+  "github.copilot.chat.languageContext.typescript.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "inlineSuggest": true,
+    "inlineSuggest.enable": true,
+    "inlineSuggest.showSuggestionsAlways": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "java.configuration.updateBuildConfiguration": "interactive"
+}
