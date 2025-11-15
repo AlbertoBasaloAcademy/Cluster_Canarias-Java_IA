@@ -1,4 +1,4 @@
-# JavaIA
+# Cluster Canarias JavaIA
 Inteligencia Artificial con Java
 
 ---
@@ -11,4 +11,4 @@ Inteligencia Artificial con Java
 
 - Author: [Alberto Basalo](https://albertobasalo.dev)
 - Academy: [Academy Organization](https://aicode.academy)
-- Laboratory: [Source Repository](https://github.com/AlbertoBasaloLabs/JavaIA)
+- Laboratory: [Source Repository](https://github.com/AlbertoBasaloAcademy/Cluster_Canarias-Java_IA)
