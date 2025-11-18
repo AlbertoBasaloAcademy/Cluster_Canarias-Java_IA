@@ -1,6 +1,6 @@
 ---
 description: 'Generate instruction files for project technology stack.'
-tools: ['edit', 'search', 'runCommands', 'think', 'fetch']
+tools: ['runCommands', 'edit', 'search', 'fetch']
 ---
 
 # Updates instructions for AIDDbot
