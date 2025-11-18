@@ -1,0 +1,7 @@
+{
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Group changes into logical commits. Create commits with clear messages that describe the changes made to the codebase following conventional commit guidelines. Keep commits linked to features, tasks, or issues when applicable."
+    }
+  ]
+}
