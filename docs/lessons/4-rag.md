@@ -8,7 +8,7 @@ theme: ab
 ---
 
 # RAG con Spring AI
-Un curso de [Academia](https://aicode.academy) para Empresa.
+Un curso de [Academia](https://aicode.academy) para Cluster Canarias.
 Por [Alberto Basalo](https://albertobasalo.dev)
 > Noviembre 2025
 ---

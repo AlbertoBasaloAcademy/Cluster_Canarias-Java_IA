@@ -8,7 +8,7 @@ theme: ab
 ---
 
 # Calidad con IA
-Un curso de [Academia](https://aicode.academy) para Empresa.
+Un curso de [Academia](https://aicode.academy) para Cluster Canarias.
 Por [Alberto Basalo](https://albertobasalo.dev)
 > Noviembre 2025
 ---
@@ -88,7 +88,10 @@ Por [Alberto Basalo](https://albertobasalo.dev)
 ### Links
 
 - [AIDDbot](https://github.com/aiddbot/aiddbot)
+- [BMAD](https://github.com/bmad-code-org/BMAD...)
+- [OpenSpec](https://github.com/Fission-AI/OpenSpec/)
 - [Spec Kit](https://github.com/github/spec-kit)
+
 
 ### Próxima lección: 
  **Spring AI.**
