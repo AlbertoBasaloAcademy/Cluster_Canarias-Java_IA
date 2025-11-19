@@ -46,7 +46,6 @@ public class AstroBibliaBasicController {
   @GetMapping("basic/ama")
   public String getAnything(@RequestParam String prompt) {
     validatePrompt(prompt);
-    log.info("basic/ama called ({} chars)", prompt.length());
     return chatClient.prompt()
         .user(prompt).call().content();
   }
@@ -61,7 +60,6 @@ public class AstroBibliaBasicController {
   @GetMapping("basic/astro")
   public String getAstronomy(@RequestParam String prompt) {
     validatePrompt(prompt);
-    log.debug("basic/astro called ({} chars)", prompt.length());
     return chatClient.prompt()
         .system(ASTRONOMY_SYSTEM_MESSAGE)
         .user(prompt).call().content();
@@ -79,7 +77,6 @@ public class AstroBibliaBasicController {
     validatePrompt(planet);
     var userPromptTemplate = "Proporciona una breve descripción del planeta {{planet}} incluyendo sus características clave y cualquier dato interesante.";
     var userPrompt = userPromptTemplate.replace("{{planet}}", planet);
-    log.debug("basic/planet called for planet='{}' (prompt {} chars)", planet, userPrompt.length());
 
     return chatClient.prompt()
         .system(ASTRONOMY_SYSTEM_MESSAGE)
@@ -96,7 +93,6 @@ public class AstroBibliaBasicController {
   @GetMapping("basic/planet/satellites")
   public String getPlanetSatellites(@RequestParam String planet) {
     validatePrompt(planet);
-    log.debug("basic/planet/satellites called for planet='{}'", planet);
 
     return chatClient.prompt()
         .system(ASTRONOMY_SYSTEM_MESSAGE)
@@ -117,7 +113,6 @@ public class AstroBibliaBasicController {
   @GetMapping("basic/planet/satellites/structured")
   public Satellites getPlanetSatellitesStructured(@RequestParam String planet) {
     validatePrompt(planet);
-    log.debug("basic/planet/satellites/structured called for planet='{}'", planet);
 
     return chatClient.prompt()
         .system(ASTRONOMY_SYSTEM_MESSAGE)
@@ -137,7 +132,6 @@ public class AstroBibliaBasicController {
   @GetMapping("basic/planet/satellites/stream")
   public Flux<String> getPlanetSatellitesStream(@RequestParam String planet) {
     validatePrompt(planet);
-    log.debug("basic/planet/satellites/stream called for planet='{}'", planet);
 
     return chatClient.prompt()
         .system(ASTRONOMY_SYSTEM_MESSAGE)
@@ -160,6 +154,8 @@ public class AstroBibliaBasicController {
       log.warn("validatePrompt: parameter length {} exceeds max {}", prompt.length(), MAX_PROMPT_LENGTH);
       throw new ResponseStatusException(HttpStatus.PAYLOAD_TOO_LARGE, "parameter too long; reduce size");
     }
+    var tokens = prompt.length() / 4; // Simplified token count for demo purposes
+    log.debug("validatePrompt: prompt tokens {}", tokens);
   }
 
 }
