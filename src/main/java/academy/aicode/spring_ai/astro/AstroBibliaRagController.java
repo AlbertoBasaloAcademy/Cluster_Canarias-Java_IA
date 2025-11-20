@@ -64,9 +64,6 @@ public class AstroBibliaRagController {
   }
 
   private String localData(String str) {
-    if (str == null) {
-      return "No sé sobre ese tema.";
-    }
     var threeIAtlas = "3I/ATLAS, también conocido como C/2025 N1 y anteriormente como A11pl3Z, es un objeto interestelar​​ descubierto el 1 de julio de 2025 por la estación del Sistema ATLAS de Río Hurtado en Chile, cuando ingresaba en el sistema solar interior a 4,5 UA del Sol y con una velocidad relativa de 61 km/s.";
     if (str.toLowerCase().contains("3i") || str.toLowerCase().contains("atlas")) {
       return threeIAtlas;

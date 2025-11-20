@@ -1,7 +1,7 @@
 ### To Rag
 
 ### Ask Me recent questions
-http://localhost:8080/rag/ama?prompt=3Iatlas
+http://localhost:8080/basic/ama?prompt=3Iatlas
 
 ### Ask Me Anything from Local data
 http://localhost:8080/rag/ama/local?prompt=3Iatlas
