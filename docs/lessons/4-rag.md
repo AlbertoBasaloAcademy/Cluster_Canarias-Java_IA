@@ -59,10 +59,8 @@ Por [Alberto Basalo](https://albertobasalo.dev)
 Consulta del usuario → Recuperación de contexto → Generación aumentada
 ```
 
-Se compone de tres partes principales:
-
-- **Retriever**: busca información relevante en una base vectorial o documental.
-- **Augmenter**: combina la información recuperada con la consulta del usuario.
+- **Retriever**: busca información relevante en una base vectorial.
+- **Augmenter**: combina la información recuperada con la del usuario.
 - **Generator**: usa el modelo para producir la respuesta final.
 
 ---
@@ -78,7 +76,7 @@ Se compone de tres partes principales:
 
 ### RAG y Vector Stores
 
-- Los datos se representan como vectores semánticos en un **Vector Store**.
+- Los datos se representan como vectores numéricos con valor semántico en un **Vector Store**.
 
 - Se compone de dos fases:
   - **Ingestión**: convertir documentos en vectores y almacenarlos.
@@ -88,13 +86,6 @@ Se compone de tres partes principales:
 Usuario - (Ingestión → Vector Store)
 Usuario → (Retriever → Vector Store) → ChatClient → LLM → Respuesta
 ```
-
---- 
-Spring AI facilita esta integración a través de componentes configurables:
-
-- **ChatClient** para las llamadas al modelo.
-- **VectorStore** para almacenar e indexar documentos.
-- **RagClient** para combinar ambos procesos.
 
 --- 
 
@@ -117,9 +108,13 @@ Spring AI facilita esta integración a través de componentes configurables:
 
 ### Spring AI for Vector Stores
 
-- Spring AI ofrece integración con varios proveedores de almacenamiento vectorial.
+- Ofrece integración con varios proveedores de almacenamiento vectorial.
 - Permite configurar fácilmente la ingesta, consulta y gestión de vectores.
 - Es independiente del motor de embeddings, del almacén de vectores... y del modelo LLM.
+
+- **ChatClient** para las llamadas al modelo.
+- **VectorStore** para almacenar e indexar documentos.
+- **RagClient** para combinar ambos procesos.
 
 ---
 
