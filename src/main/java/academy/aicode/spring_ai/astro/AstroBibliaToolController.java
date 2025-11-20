@@ -102,5 +102,3 @@ public class AstroBibliaToolController {
     }
   }
 }
-
-// ToDo: Vector DB (ingest, query)
